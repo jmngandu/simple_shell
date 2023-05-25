@@ -8,5 +8,5 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <unistd.h>
-void prompt(void);
+void prompt(char **av, char **env);
 #endif

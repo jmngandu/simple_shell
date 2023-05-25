@@ -5,9 +5,9 @@
  *@argv: an array of null terminated strings
  * Return: 0 on success
 */
-int main(int ac, char **argv)
+int main(int ac, char **av, char **env)
 {
-	(void)ac;
-	(void)argv;
+	if(ac == 1)
+		prompt(av, env);
 	return (0);
 }
