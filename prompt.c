@@ -17,7 +17,8 @@ void prompt(char **av, char **env)
 	(void)av;
 	while (1)
 	{
-		write(STDOUT_FILENO, prompt, 8);
+		if (isatty(STDIN_FILENO))
+			write(STDOUT_FILENO, prompt, 8);
 		num_char_read = getline(&user_input, &n, stdin);
 		if (num_char_read == -1)
 		{
