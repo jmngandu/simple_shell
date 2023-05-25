@@ -7,6 +7,7 @@
 */
 int main(int ac, char **argv)
 {
-        (void)ac;(void)argv;
+	(void)ac;
+	(void)argv;
 	return (0);
 }
