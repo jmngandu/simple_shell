@@ -9,4 +9,5 @@
 #include <stdio.h>
 #include <unistd.h>
 void prompt(char **av, char **env);
+void exec(char **argv);
 #endif
