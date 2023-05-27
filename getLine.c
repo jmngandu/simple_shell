@@ -81,8 +81,8 @@ ssize_t get_input(info_t *info)
 		return (_strlen(p));
 	}
 
-	*buff_p = buff; 
-	return (rc); 
+	*buff_p = buff;
+	return (rc);
 }
 
 /**
@@ -132,7 +132,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
 	c = str_chr(buff + i, '\n');
 	j = c ? 1 + (unsigned int)(c - buff) : len;
 	new_p = _realloc(p, s, s ? s + j : j + 1);
-	if (!new_p) 
+	if (!new_p)
 		return (p ? free(p), -1 : -1);
 
 	if (s)
