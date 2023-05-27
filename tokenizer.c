@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
  * **strtow - splits a string into words
  * @str: the  string to split

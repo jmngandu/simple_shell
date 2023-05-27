@@ -1,5 +1,5 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef _SHELL_H_
+#define _SHELL_H_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -111,7 +111,11 @@ typedef struct builtin
 
 
 /* shloop.c */
+<<<<<<< HEAD
 int hsh(info_t, char *);
+=======
+int hsh(info_t *, char **);
+>>>>>>> f9b75ec6df1c8698ecd33785fda065b34e52f8a6
 int get_builtin(info_t *);
 void get_cmd(info_t *);
 void _fork(info_t *);
@@ -183,12 +187,20 @@ int _alias(info_t *);
 
 /* getline.c */
 ssize_t get_input(info_t *);
+<<<<<<< HEAD
 int _getline(info_t, char *, size_t *);
+=======
+int _getline(info_t *, char **, size_t *);
+>>>>>>> f9b75ec6df1c8698ecd33785fda065b34e52f8a6
 void sigintHandle(int);
 
 /* getinfo.c */
 void init_info(info_t *);
+<<<<<<< HEAD
 void set_info(info_t*, char **);
+=======
+void set_info(info_t *, char **);
+>>>>>>> f9b75ec6df1c8698ecd33785fda065b34e52f8a6
 void free_info(info_t *, int);
 
 /* environ.c */
@@ -211,8 +223,8 @@ int build_history_list(info_t *info, char *buf, int linecount);
 int number_history(info_t *info);
 
 /* lists.c */
-list_t add_node(list_t *, const char *, int);
-list_t ins_node_end(list_t *, const char *, int);
+list_t *add_node(list_t **, const char *, int);
+list_t *ins_node_end(list_t **, const char *, int);
 size_t print_list_str(const list_t *);
 int del_node_at_index(list_t **, unsigned int);
 void freeLists(list_t **);
@@ -232,3 +244,4 @@ int replace_vars(info_t *);
 int replace_string(char **, char *);
 
 #endif
+
