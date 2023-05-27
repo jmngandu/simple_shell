@@ -111,11 +111,7 @@ typedef struct builtin
 
 
 /* shloop.c */
-<<<<<<< HEAD
-int hsh(info_t, char *);
-=======
 int hsh(info_t *, char **);
->>>>>>> f9b75ec6df1c8698ecd33785fda065b34e52f8a6
 int get_builtin(info_t *);
 void get_cmd(info_t *);
 void _fork(info_t *);
@@ -187,20 +183,13 @@ int _alias(info_t *);
 
 /* getline.c */
 ssize_t get_input(info_t *);
-<<<<<<< HEAD
-int _getline(info_t, char *, size_t *);
-=======
 int _getline(info_t *, char **, size_t *);
->>>>>>> f9b75ec6df1c8698ecd33785fda065b34e52f8a6
 void sigintHandle(int);
 
 /* getinfo.c */
 void init_info(info_t *);
-<<<<<<< HEAD
 void set_info(info_t*, char **);
-=======
 void set_info(info_t *, char **);
->>>>>>> f9b75ec6df1c8698ecd33785fda065b34e52f8a6
 void free_info(info_t *, int);
 
 /* environ.c */
