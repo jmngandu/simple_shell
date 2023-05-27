@@ -155,7 +155,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
  * @sig_n: the signal number
  * Return: void
  */
-void sigintHandle(_attribute_((unused))int sig_n)
+void sigintHandle(__attribute__((unused))int sig_n)
 {
 	_puts("\n");
 	_puts("$ ");
