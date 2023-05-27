@@ -189,7 +189,7 @@ char *_getenv(info_t *, const char *);
 int _myenv(info_t *);
 int _mysetenv(info_t *);
 int _myunsetenv(info_t *);
-
+int env_list(info_t *info);
 
 /* getenv.c */
 char **find_environ(info_t *);
