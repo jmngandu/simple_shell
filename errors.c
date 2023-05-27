@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- *_errputs - prints an err string
+ *_eputs - prints an err string
  * @str: the err to be printed
  * Return: void
  */
@@ -62,8 +62,8 @@ int _putfd(char c, int fd)
 /**
  *_putsfd - prints string suplied
  * @str: string to print
- * @fd: filedescriptor t\
- * Return: num of chars put
+ * @fd: filedescriptor
+ * Return: 1 on success, on error NULL
  */
 int _putsfd(char *str, int fd)
 {

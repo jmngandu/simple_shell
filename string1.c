@@ -23,7 +23,7 @@ char *_strcpy(char *dest, char *src)
 
 /**
  * _strdup - creates a copy of a string string
- * @str: the string to be duplicated
+ * @s: the string to be duplicated
  * Return: pointer tonew duplicated string
  */
 char *_strdup(const char *s)
@@ -45,7 +45,7 @@ char *_strdup(const char *s)
 
 /**
  *_puts - outputs an a string to the standard output
- *@str: the string to be printed to the standard output
+ *@s: the string to be printed to the standard output
  * Return: void
  */
 void _puts(char *s)

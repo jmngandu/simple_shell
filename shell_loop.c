@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * hsh - the prompt loop 
+ * hsh - the prompt loop
  * @info: the info struct
  * @av: an array of null terminated strings
  * Return: 0 on success, 1 on failure

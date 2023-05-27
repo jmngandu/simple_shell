@@ -51,7 +51,7 @@ int _unsetenv(info_t *info, char *val)
  * _setenv - sets environments
  * @info: Structure holding potential arguments
  * @variable: the environment variable
- * @value: the value 
+ * @value: the value
  *  Return: 0
  */
 int _setenv(info_t *info, char *variable, char *value)

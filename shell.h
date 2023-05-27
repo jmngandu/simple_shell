@@ -59,7 +59,7 @@ typedef struct liststr
  *@linecount_flag: on count  line of input
  *@fname: program filename
  *@env: local copy of environ
- *@environ: custom copy of environ 
+ *@environ: custom copy of environ
  *@history: history node
  *@alias: alias node
  *@env_changed: on, environ was changed
@@ -68,6 +68,8 @@ typedef struct liststr
  *@cmd_buf_type: CMD_type
  *@readfd: the file_d from which to read line input
  *@histcount: history line number count
+ *@path: is the file path
+ *@argc: arguement count
  */
 typedef struct passinfo
 {
@@ -86,7 +88,7 @@ typedef struct passinfo
 	int env_changed;
 	int status;
 
-	char **cmd_buf; 
+	char **cmd_buf;
 	int cmd_buf_type;
 	int readfd;
 	int histcount;
@@ -109,7 +111,7 @@ typedef struct builtin
 
 
 /* shloop.c */
-int hsh(info_t , char *);
+int hsh(info_t, char *);
 int get_builtin(info_t *);
 void get_cmd(info_t *);
 void _fork(info_t *);
@@ -181,12 +183,12 @@ int _alias(info_t *);
 
 /* getline.c */
 ssize_t get_input(info_t *);
-int _getline(info_t , char *, size_t *);
+int _getline(info_t, char *, size_t *);
 void sigintHandle(int);
 
 /* getinfo.c */
 void init_info(info_t *);
-void set_info(info_t , char *);
+void set_info(info_t*, char **);
 void free_info(info_t *, int);
 
 /* environ.c */

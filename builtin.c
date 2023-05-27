@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _myexit - 	quits the shell
+ * _myexit - quits the shell
  * @info: info struct
  *  Return: quits shell with a given exit status
  */

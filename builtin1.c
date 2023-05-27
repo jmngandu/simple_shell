@@ -12,7 +12,7 @@ int _history(info_t *info)
 }
 
 /**
- * unset_alias - sets alias 
+ * unset_alias - sets alias
  * @info:  struct
  * @str:  str alias
  * Return: 0 on success, 1 on error

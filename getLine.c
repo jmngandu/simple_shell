@@ -59,11 +59,11 @@ ssize_t get_input(info_t *info)
 		return (-1);
 	if (len)
 	{
-		j = i; 
+		j = i;
 		p = buff + i;
 
 		check_chain(info, buff, &j, i, len);
-		while (j < len) 
+		while (j < len)
 		{
 			if (is_chain(info, buff, &j))
 				break;
@@ -77,12 +77,12 @@ ssize_t get_input(info_t *info)
 			info->cmd_buf_type = CMD_NORM;
 		}
 
-		*buff_p = p; 
+		*buff_p = p;
 		return (_strlen(p));
 	}
 
-	*buff_p = buff; 
-	return (rc); 
+	*buff_p = buff;
+	return (rc);
 }
 
 /**
@@ -132,7 +132,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
 	c = str_chr(buff + i, '\n');
 	j = c ? 1 + (unsigned int)(c - buff) : len;
 	new_p = _realloc(p, s, s ? s + j : j + 1);
-	if (!new_p) 
+	if (!new_p)
 		return (p ? free(p), -1 : -1);
 
 	if (s)

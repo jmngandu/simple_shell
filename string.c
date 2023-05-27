@@ -2,7 +2,7 @@
 
 /**
  * _strlen - finds the no. of chars in a string
- * @s: the string to check
+ * @str: the string to check
  * Return: number of characters in string
  */
 int _strlen(char *str)
@@ -19,9 +19,8 @@ int _strlen(char *str)
 
 /**
  * _strcmp - compares two strangs.
- * @s1: first string to compare
- * @s2: 2nd string to compare
- *
+ * @str1: first string to compare
+ * @str2: 2nd string to compare
  * Return: -1 if s1 < s2, 1 if s1 > s2, 0 if s1 is same as s2
  */
 int _strcmp(char *str1, char *str2)
@@ -42,7 +41,7 @@ int _strcmp(char *str1, char *str2)
 /**
  * starts_ - checks whther a needle begins with haystack
  * @hay_stack: string to be searched
- * @needle: the substring to be searched 
+ * @needle: the substring to be searched
  * Return: address to the next char of haystack or NULL
  */
 char *starts_(const char *hay_stack, const char *needle)

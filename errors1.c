@@ -3,7 +3,7 @@
 /**
  * err_atoi - converts a given string to  int
  * @s: string to convert
- * Return: converted number 
+ * Return: converted number
  *       -1 on error
  */
 int err_atoi(char *s)
@@ -12,7 +12,7 @@ int err_atoi(char *s)
 	unsigned long int result = 0;
 
 	if (*s == '+')
-		s++;  
+		s++;
 	for (i = 0;  s[i] != '\0'; i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
@@ -49,7 +49,7 @@ void print_err(info_t *info, char *errstr)
 /**
  * print_dec - function prints a (integer) / base 10
  * @input: the input enteres
- * @fd: the filedescriptor 
+ * @fd: the filedescriptor
  * Return: num of chars printed
  */
 int print_dec(int input, int fd)

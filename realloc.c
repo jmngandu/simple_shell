@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  **_memset - stores in a memory a constant byte
- *@s: pointer to the memory 
+ *@s: pointer to the memory
  *@b: byte to fill a string with
  *@n: amt of bytes to be filled
  *Return: a pointer to the memory area s

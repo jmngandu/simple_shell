@@ -2,7 +2,7 @@
 
 /**
  **str_cpy - copies a string to another buffer
- *@dest: the destination string 
+ *@dest: the destination string
  *@src: the source string
  *@n: the num of char to be copied
  *Return: concatenated string

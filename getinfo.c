@@ -15,7 +15,7 @@ void init_info(info_t *info)
 /**
  * set_info - sets info_t struct
  * @info: struct address
- * @av: argument 
+ * @av: argument
  */
 void set_info(info_t *info, char **av)
 {
